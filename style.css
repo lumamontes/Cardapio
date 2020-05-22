@@ -4,9 +4,29 @@
     box-sizing: border-box;
  }
 
+ :root {
+     --azul: #c4d9da;
+     --laranja: #F86358;
+
+ }
+
+ body {
+    font-family: 'Noto Sans JP', sans-serif;
+ }
+
+ header {
+     background-color: var(--azul);
+    width: 20%;
+
+ }
+ a {
+     text-decoration: none;
+     color: l;
+ }
+
 
  .titulo_table {
-    background-color: #000000ee;
+    background-color: rgba(0, 0, 0, 0.933);
     color: white;
     padding: 50px;
     display: flex;
