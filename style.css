@@ -6,14 +6,19 @@
 
 
  .titulo_table {
-     background-color: #000000ee;
-     color: white;
-     display: flex;
-    flex-direction: row;
+    background-color: #000000ee;
+    color: white;
     padding: 50px;
-    }
+    display: flex;
+    flex-direction: row;
+}
 
-    .titulo_table p{
-        margin: auto;
-        p
-    }
+.lanches_info  {
+    display: flex;
+
+} 
+
+.lanches_name {
+    display: flex;
+    flex-direction: column;
+}
