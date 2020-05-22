@@ -1,0 +1,19 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+ .titulo_table {
+     background-color: #000000ee;
+     color: white;
+     display: flex;
+    flex-direction: row;
+    padding: 50px;
+    }
+
+    .titulo_table p{
+        margin: auto;
+        p
+    }
