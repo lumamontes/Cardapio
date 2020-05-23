@@ -1,5 +1,5 @@
 
-/* GLOBAIS */
+/* ====== --GLOBAIS--- ===== */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@
  :root {
      --azul: #c4d9da;
      --laranja: #F86358;
+     --preto: #000000ee
 
  }
 
@@ -22,8 +23,24 @@
 
  }
 
+
+ /* ======--- -  CSS HEADER -- --====== */
+
 /* barra lateral espaçamentos e alinhamentos*/
 
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+header nav {
+  margin-top: 20px;
+}
  header ul li{
     list-style-type: none;
     display: flex;
@@ -31,16 +48,23 @@
  }
 
  .icone {
-    height: 10px;
-    margin-top: 5px;
+  height: 10px;
+  margin-top: 5px;
+}
+ 
+ header footer {
+  padding: 15px;
+  color: var(--preto);
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  text-align: center;
 }
 
- header img {
-     width: 100%;
-     height: auto;
- }
 
-  /* Barra lateral fixa */
+  /* fixando a barra lateral  */
 
  .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -61,7 +85,7 @@
   text-decoration: none;
   color: #000000ee;
   display: block;
-}
+} 
 
 .sidenav a:hover,.icone:hover {
   color: var(--laranja);
@@ -75,7 +99,7 @@
 
 
 
-/* MAIN */
+/* - ====----MAIN--===- - */
 
 .main {
   margin-left: 300px; /* Same as the width of the sidebar */
@@ -103,7 +127,7 @@
     flex-direction: row;
 }
 
-  /* css do formulario*/
+  /* ==== --- CSS do formulario -- =====*/
 .divinput{background-color:#fff; 
   width:700px;
   min-height:400px;
