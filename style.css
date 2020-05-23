@@ -27,7 +27,9 @@
      width: 100%;
  }
 
-
+textarea {
+    color: black;
+}
 
  .lanches_info  {
     display: flex;
