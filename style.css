@@ -121,10 +121,10 @@ header nav {
   background-color: var(--branco);
 }
 section {
-  padding: 80px 40px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: justify;
+  padding-top: 50px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -159,32 +159,34 @@ font-size: 32px;
 
 /* -- SOBRE ---= */
 
-#sobre h1 {
+.sobre h1 {
   text-transform: uppercase
  }
  
 #sobre-info {
   display: flex;
   width: 100%;
-}
+  margin-top: 30px;
 
+}
+#sobre-img {
+  width: 35%;
+}
 #sobre-img img{
-  width: 85%;
+  width: 300px;
 }
-#sobre-info ul li {
-padding: 10px;
-}
-
 #sobre-txt{
-  width: 70%;
+  width: 65%;
 }
-
 
 .sobre-icone {
   color: var(--laranja);
   padding: 5px;
 }
 
+#sobre-info ul li {
+padding: 10px;
+}
 
 /*-- LANCHES --- */
 
