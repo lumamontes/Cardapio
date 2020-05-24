@@ -171,11 +171,11 @@ font-size: 32px;
 
   /* ==== --- CSS do formulario -- =====*/
 .divinput{background-color:#fff; 
-  width:700px;
+  width:650px;
   min-height:400px;
 padding:2em}
 
-#nome, #endereco, #cupom{width:40em;height:3em}
+#nome, #endereco, #cupom{width:37em;height:3em}
 
 
 
@@ -223,7 +223,7 @@ fieldset.grupo .campo {
     border: 1px solid #CCC;
     box-shadow: 2px 2px 2px;
     display: block;
-    width:50em
+    width:45em
 }
 
 
