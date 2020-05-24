@@ -8,8 +8,9 @@
 
  :root {
      --azul: #c4d9da;
-     --laranja: #F86358;
-     --preto: #000000ee
+     --branco: #fff;
+     --preto: #000000ee;
+     --laranja: #F86358
 
  }
 
@@ -23,6 +24,15 @@
 
  }
 
+ ul li {
+  list-style-type: none;
+ }
+
+ p {
+}
+a {
+  text-decoration: none;
+}
 
  /* ======--- -  CSS HEADER -- --====== */
 
@@ -42,7 +52,6 @@ header nav {
   margin-top: 20px;
 }
  header ul li{
-    list-style-type: none;
     display: flex;
     flex-direction: row;
  }
@@ -88,7 +97,7 @@ header nav {
 } 
 
 .sidenav a:hover,.icone:hover {
-  color: var(--laranja);
+  color: var(--branco);
 }
 
 @media screen and (max-height: 450px) {
@@ -104,8 +113,41 @@ header nav {
 .main {
   margin-left: 300px; /* Same as the width of the sidebar */
   padding: 0px 10px;
-  background-color: var(--laranja);
+  background-color: var(--branco);
 }
+section {
+  padding: 80px 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+section h1 {
+ text-transform: uppercase
+}
+
+section h1, section h2 {
+font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--preto);
+
+
+}
+
+ section h2::after, section h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--azul);
+  bottom: 0;
+  left: 0;
+} 
+
+
  .lanches_info  {
     display: flex;
 
