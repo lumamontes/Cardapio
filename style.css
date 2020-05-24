@@ -7,10 +7,11 @@
  }
 
  :root {
+   /* reavaliar escolha de cores.. motivos: facilidade de leitura */
      --azul: #c4d9da;
      --branco: #fff;
      --preto: #000000ee;
-     --laranja: #F86358
+     --laranja: #F86358;
 
  }
 
@@ -29,10 +30,14 @@
  }
 
  p {
+   padding: 5px;
+   margin: 5px 0
 }
 a {
   text-decoration: none;
 }
+
+
 
  /* ======--- -  CSS HEADER -- --====== */
 
@@ -119,14 +124,18 @@ section {
   padding: 80px 40px;
   width: 80%;
   margin: 0 auto;
+  text-align: justify;
 }
+
+
 /* -- Títulos--*/
-
-section h1 {
- text-transform: uppercase
+.txt-negrito {
+  font-weight: bold;
 }
-
-section h1, section h2 {
+.txt-italico {
+  font-style: italic;
+}
+section h1 {
 font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -136,7 +145,7 @@ font-size: 32px;
 
 }
 
- section h2::after, section h1::after {
+ section h1::after {
   content: '';
   position: absolute;
   display: block;
@@ -147,9 +156,40 @@ font-size: 32px;
   left: 0;
 } 
 
+
+/* -- SOBRE ---= */
+
+#sobre h1 {
+  text-transform: uppercase
+ }
+ 
 #sobre-info {
   display: flex;
+  width: 100%;
 }
+
+#sobre-img img{
+  width: 85%;
+}
+#sobre-info ul li {
+padding: 10px;
+}
+
+#sobre-txt{
+  width: 70%;
+}
+
+
+.sobre-icone {
+  color: var(--laranja);
+  padding: 5px;
+}
+
+
+/*-- LANCHES --- */
+
+
+
  .lanches_info  {
     display: flex;
 
@@ -177,7 +217,8 @@ font-size: 32px;
   min-height:400px;
 padding:2em}
 
-#nome, #endereco, #cupom{width:40em;height:3em}
+#nome, #endereco, #cupom{
+  width:40em;height:3em}
 
 
 
