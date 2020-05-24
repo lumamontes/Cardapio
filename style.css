@@ -122,9 +122,8 @@ header nav {
 }
 section {
   padding-top: 50px;
-  width: 95%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 90%;
+  margin: 30px auto;
 }
 
 
@@ -177,7 +176,9 @@ font-size: 32px;
 }
 #sobre-txt{
   width: 65%;
+  margin-left: 20px;
 }
+
 
 .sobre-icone {
   color: var(--laranja);
@@ -185,32 +186,49 @@ font-size: 32px;
 }
 
 #sobre-info ul li {
-padding: 10px;
+padding: 5px;
 }
 
 /*-- LANCHES --- */
 
-
-
- .lanches_info  {
+ .titulos_table {
+    background-color: rgba(0, 0, 0, 0.933);
+    width: 100%;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .lanches_info  {
     display: flex;
 
 } 
-
-.lanches_name {
+  .lanches_name {
     display: flex;
     flex-direction: column;
 }
 
+.sub-txt {
+  font-size: 14px;
+  color: rgb(110, 110, 110);
+}
+#titulo_valor {
+  margin-left: 500px
+}
 
+.lanches_valor {
+  margin-left: 50px;
+  padding: 10px;
 
+}
+.lanches_quant {
+  padding: 10px;
 
- .titulo_table {
-    background-color: rgba(0, 0, 0, 0.933);
-    color: white;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
+}
+
+#titulo_quant, .lanches_quant {
+  margin-left: 100px;
 }
 
   /* ==== --- CSS do formulario -- =====*/
