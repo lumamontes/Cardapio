@@ -220,7 +220,6 @@ padding: 5px;
 .lanches_valor {
   margin-left: 50px;
   padding: 10px;
-
 }
 .lanches_quant {
   padding: 10px;
@@ -233,12 +232,13 @@ padding: 5px;
 
   /* ==== --- CSS do formulario -- =====*/
 .divinput{background-color:#fff; 
-  width:700px;
-  min-height:400px;
-padding:2em}
+  width:37.5em;
+  min-height:25em;
+padding:2em;
+float:left;}
 
 #nome, #endereco, #cupom{
-  width:40em;height:3em}
+  width:30em;height:3em}
 
 
 
@@ -278,15 +278,15 @@ fieldset.grupo .campo {
 .campo input[type="text"]{
     padding: 0.2em;
     border: 1px solid #CCC;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 1px 1px 1px;
     display: block;
 }
 .campo textarea {
     padding: 0.2em;
     border: 1px solid #CCC;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 1px 1px 1px;
     display: block;
-    width:50em
+    width:38em
 }
 
 
@@ -301,7 +301,7 @@ fieldset.grupo .campo {
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    width:25em;
+    width:20em;
 }
 
 .botao:hover {
@@ -313,4 +313,17 @@ fieldset.grupo .campo {
 .botao, input[type="radio"] {
     cursor: pointer;
 }
+  /* ==== --- CSS de informação -- =====*/
+  #info{
+background-color:#fff; 
+width:18.75em;
+min-height:25em;
+padding:2em;
+float:left;
+}
+#info p{font-size:14px;
+font-family: 'Noto Sans JP', sans-serif; 
+}
+
+
 
