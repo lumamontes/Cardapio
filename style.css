@@ -8,8 +8,8 @@
 
  :root {
    /* reavaliar escolha de cores.. motivos: facilidade de leitura */
-     --azul: #c4d9da;
-     --branco: #fff;
+     --azul: #89abad;
+     --branco: rgba(255, 255, 255, 0.705);
      --preto: #000000ee;
      --laranja: #F86358;
 
@@ -43,7 +43,6 @@ a {
 
 /* barra lateral espaçamentos e alinhamentos*/
 
-
 header img {
   width: 100%;
   height: auto;
@@ -76,7 +75,6 @@ header nav {
   width: 300px;
   text-align: center;
 }
-
 
   /* fixando a barra lateral  */
 
@@ -150,7 +148,7 @@ font-size: 32px;
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--azul);
+  background: var(--laranja);
   bottom: 0;
   left: 0;
 } 
@@ -231,7 +229,8 @@ padding: 5px;
 }
 
   /* ==== --- CSS do formulario -- =====*/
-.divinput{background-color:#fff; 
+.divinput{
+  background-color:#fff; 
   width:37.5em;
   min-height:25em;
 padding:2em;
