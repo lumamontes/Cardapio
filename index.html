@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+
     <title>Cardápio</title>
 </head>
 
@@ -87,7 +88,7 @@
             </div>
         </section>
 
-        <section id="lanches">
+        <section class="lanches hidden" id="lanches">
             <article class="container">
                 <div>
                     <h1>Lanches</h1>
@@ -186,7 +187,7 @@
 
         </section>
 
-        <section id="adicionais">
+        <section id="adicionais" class="hidden">
             <div>
                 <article class="container">
                     <div>
@@ -277,7 +278,7 @@
 
         </section>
 
-        <section id="bebidas">
+        <section id="bebidas" class="hidden">
             <div>
                 <article class="container">
                     <div>
@@ -368,14 +369,14 @@
 
         </section>
 
-        <section id="pedido">
+        <section id="pedido" class="hidden">
             <div>
                 <h1>Pedido</h1>
                 <p></p>
             </div>
 
             <div class="divinput">
-                <form action="#">
+                <form action="#" method="GET" name="form_pedido" id="form_pedido" onsubmit="return valida">
                     <fieldset>
                         <fieldset class="grupo">
                             <div class="campo">
@@ -419,7 +420,7 @@
                             <textarea rows="6" id="mensagem" name="mensagem" placeholder="observações"></textarea>
                         </div>
                         <div class="campo">
-                            <input type="button" value="Pedir no WhatsApp" class="botao">
+                            <input type="button" value="Pedir no WhatsApp" class="botao" onclick="return valida()">
                         </div>
 
 
@@ -446,7 +447,8 @@
             </div>
         </section>
     </div>
-
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

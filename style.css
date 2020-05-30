@@ -159,7 +159,7 @@ font-size: 32px;
 .sobre h1 {
   text-transform: uppercase
  }
- 
+
 #sobre-info {
   display: flex;
   width: 100%;
@@ -324,5 +324,8 @@ float:left;
 font-family: 'Noto Sans JP', sans-serif; 
 }
 
-
+/* .hidden {
+  display: none;
+  visibility: hidden;
+} */
 
