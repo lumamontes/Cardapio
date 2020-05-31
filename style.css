@@ -38,7 +38,12 @@ a {
   text-decoration: none;
 }
 
-
+.txt-negrito {
+  font-weight: bold;
+}
+.txt-italico {
+  font-style: italic;
+}
 
  /* ======--- -  CSS HEADER -- --====== */
 
@@ -65,10 +70,7 @@ header nav {
   height: 10px;
   margin-top: 5px;
 }
-.fa, .fas {
-  color: var(--branco);
-}
- 
+
  header footer {
   padding: 15px;
   color: var(--branco);
@@ -107,10 +109,6 @@ header nav {
   color: var(--preto)
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
 
 
@@ -128,12 +126,7 @@ section {
 
 
 /* -- Títulos--*/
-.txt-negrito {
-  font-weight: bold;
-}
-.txt-italico {
-  font-style: italic;
-}
+
 section h1 {
 font-size: 32px;
     font-weight: bold;
@@ -157,15 +150,24 @@ font-size: 32px;
 
 /* -- SOBRE ---= */
 /* Títulos */
-.sobre {
+#sobre .container{
+  padding-top: 5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   color: var(--branco);
+
+}
+.sobre {
 }
 .sobre h1 {
   text-transform: uppercase;
   color: var(--branco);
+  z-index: 2;
+
 
  }
- #sobre-titulos h1, #sobre-titulos p {
+.sobre h2{
   z-index: 2;
   position: relative;
 }
@@ -183,8 +185,6 @@ font-size: 32px;
   z-index: 2;
 
 }
-
-
 .sobre-icone {
   color: var(--laranja);
   padding: 5px;
@@ -229,7 +229,7 @@ padding: 5px;
     flex-direction: row;
     align-items: center;
   }
-  .lanches_info  {
+  .lanches_info, .bebidas_info {
     display: flex;
 
 } 
@@ -250,6 +250,7 @@ padding: 5px;
   margin-left: 50px;
   padding: 10px;
 }
+
 .lanches_quant {
   padding: 10px;
 
@@ -259,26 +260,50 @@ padding: 5px;
   margin-left: 100px;
 }
 
+/*BEBIDAS */
+#bebidas .titulo_valor,  #bebidas .titulo_quant {
+  margin-left: 300px;
+}
+
+#bebidas .lanches_valor
+, #bebidas .lanches_quant{
+  padding: 10px;
+  margin-left: 275px;
+}
+
+/* ADICIONAIS */
+#adicionais .titulo_valor,  #adicionais .titulo_quant {
+  margin-left: 300px;
+}
+
+#adicionais .lanches_valor
+, #adicionais .lanches_quant{
+  padding: 10px;
+  margin-left: 275px;
+
+
+}
+
+
   /* ==== --- CSS do formulario -- =====*/
 .divinput{
-  background-color:#fff; 
+  background-color:rgba(245, 245, 248, 0.719); 
+  box-shadow: 1px 1px 1px;
   width:37.5em;
   min-height:25em;
-padding:2em;
-float:left;}
-
+  padding:2em;
+}
 #nome, #endereco, #cupom{
   width:30em;height:3em}
 
 
 
 fieldset {
-    border: 0;
+  border: none;
 }
 
-body, input, input[type="radio"], textarea, button {
-    
-    font-size: 1em;
+body, input, input[type="radio"], textarea {
+      font-size: 1em;
 }
 
 .grupo:before, .grupo:after {
@@ -297,7 +322,8 @@ body, input, input[type="radio"], textarea, button {
 .campo label {
     margin-bottom: 0.2em;
     color: #666;
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 fieldset.grupo .campo {
@@ -305,25 +331,30 @@ fieldset.grupo .campo {
     margin-right: 1em;
 }
 
+.flex-container {
+  display: flex;
+
+}
+#pedido input, #pedido textarea {
+  outline: none;
+}
 .campo input[type="text"]{
     padding: 0.2em;
     border: 1px solid #CCC;
-    box-shadow: 1px 1px 1px;
+    box-shadow: 0.1px 0.5px 0.2px;
     display: block;
 }
 .campo textarea {
     padding: 0.2em;
     border: 1px solid #CCC;
-    box-shadow: 1px 1px 1px;
     display: block;
     width:38em
 }
 
-
-
-
 .botao {
-    font-size: 1.5em;
+    width:30em;
+    height:2.5em;
+    font-size: 1.0em;
     background:#343a40;
     border: 0;
     margin-bottom: 1em;
@@ -331,11 +362,10 @@ fieldset.grupo .campo {
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    width:20em;
 }
 
 .botao:hover {
-    background: #23272b;
+    background: #131314;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
