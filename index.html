@@ -23,20 +23,24 @@
             <ul>
                 <li>
                     <div class="icone"><i class="fas fa-home"></i></div>
-                    <a href="#sobre">Página inicial</a>
+                    <a id="i-sobre" href="#sobre">Página inicial</a>
                 </li>
                 <li>
                     <div class="icone"><i class="fas fa-hamburger"></i></div>
-                    <a href="#lanches">Lanches</a>
+                    <a id="i-lan" class="active" href="#lanches">Lanches</a>
                 </li>
                 <li>
                     <div class="icone"><i class="fas fa-wine-bottle"></i></div>
-                    <a href="#bebidas">Bebidas</a>
+                    <a id="i-bebidas" href="#bebidas">Bebidas</a>
+                </li>
+                <li>
+                    <div class="icone"><i class="fas fa-envelope"></i></div>
+                    <a id="i-adicionais" href="#adicionais">Adicionais</a>
                 </li>
                 <li>
                     <div class="icone"><i class="fas fa-envelope"></i></div>
 
-                    <a href="#pedido">Pedidos</a>
+                    <a id="i-pedidos" href="#pedido">Pedidos</a>
                 </li>
             </ul>
         </nav>
@@ -51,7 +55,7 @@
     <div class="main">
 
 
-        <section class="sobre hidden" id="sobre">
+        <section class="sobre active" id="sobre">
             <h1>Sobre</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum magna turpis, ut vehicula diam
                 pretium a. Nullam lacinia diam eu nisi condimentum consectetur. Donec mollis diam vitae dolor efficitur,
@@ -88,7 +92,7 @@
             </div>
         </section>
 
-        <section class="lanches hidden" id="lanches">
+        <section class="lanches hidden " id="lanches">
             <article class="container">
                 <div>
                     <h1>Lanches</h1>
@@ -187,7 +191,7 @@
 
         </section>
 
-        <section id="adicionais" class="hidden">
+        <section id="adicionais" class="adicionais hidden">
             <div>
                 <article class="container">
                     <div>
@@ -278,7 +282,7 @@
 
         </section>
 
-        <section id="bebidas" class="hidden">
+        <section id="bebidas" class="bebidas hidden">
             <div>
                 <article class="container">
                     <div>
@@ -369,7 +373,7 @@
 
         </section>
 
-        <section id="pedido" class="hidden">
+        <section id="pedido" class="hidden pedido">
             <div>
                 <h1>Pedido</h1>
                 <p></p>
