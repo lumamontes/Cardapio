@@ -12,6 +12,7 @@
      --branco: rgba(255, 255, 255, 0.705);
      --preto: #000000ee;
      --laranja: #F86358;
+     --salmao: #E94F4F;
 
  }
 
@@ -64,10 +65,13 @@ header nav {
   height: 10px;
   margin-top: 5px;
 }
+.fa, .fas {
+  color: var(--branco);
+}
  
  header footer {
   padding: 15px;
-  color: var(--preto);
+  color: var(--branco);
   font-size: 14px;
   position: fixed;
   left: 0;
@@ -85,7 +89,7 @@ header nav {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: var(--azul); /* Black */
+  background-image: linear-gradient(to bottom,var(--salmao), #6d6d6db0 180%);
   overflow-x: hidden; /* Disable horizontal scroll */
   overflow-y: hidden; /* Disable vertical scroll */
   padding-top: 5px;
@@ -95,12 +99,12 @@ header nav {
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  color: #000000ee;
+  color: var(--branco);
   display: block;
 } 
 
 .sidenav a:hover,.icone:hover {
-  color: var(--branco);
+  color: var(--preto)
 }
 
 @media screen and (max-height: 450px) {
@@ -118,7 +122,6 @@ header nav {
   background-color: var(--branco);
 }
 section {
-  padding-top: 50px;
   width: 90%;
   margin: 30px auto;
 }
@@ -153,26 +156,32 @@ font-size: 32px;
 
 
 /* -- SOBRE ---= */
-
+/* Títulos */
+.sobre {
+  color: var(--branco);
+}
 .sobre h1 {
-  text-transform: uppercase
+  text-transform: uppercase;
+  color: var(--branco);
+
  }
+ #sobre-titulos h1, #sobre-titulos p {
+  z-index: 2;
+  position: relative;
+}
 
-#sobre-info {
-  display: flex;
+/* Espaçamento e alinhamentos na página */
+#sobre-info-container {
   width: 100%;
-  margin-top: 30px;
+  z-index: 2;
+  position: relative;
+
 
 }
-#sobre-img {
-  width: 35%;
-}
-#sobre-img img{
-  width: 300px;
-}
+
 #sobre-txt{
-  width: 65%;
-  margin-left: 20px;
+  z-index: 2;
+
 }
 
 
@@ -181,9 +190,33 @@ font-size: 32px;
   padding: 5px;
 }
 
-#sobre-info ul li {
+#sobre-info-container ul li {
 padding: 5px;
+
 }
+
+#sobre {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(img/variety-of-vegetables-1400172.jpg);
+  background-size: 100%;
+  margin: 0;
+ 
+
+}
+#sobre:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.322);
+  box-shadow: inset 200px 350px 700px #000000de,inset -200px -350px 700px #000000e7;;
+}
+
 
 /*-- LANCHES --- */
 
@@ -323,26 +356,6 @@ font-family: 'Noto Sans JP', sans-serif;
 }
 
 
-#sobre {
-  width: 100%;
-  height: 93vh;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.438);
-  margin: 0;
- 
-
-}
-#sobre:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  /* background: rgba(0, 0, 0, 0.322); */
-  /* box-shadow: inset 120px 100px 250px #000000,inset -120px -100px 250px #000000;; */
-}
 
 .active {
   display: block;
