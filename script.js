@@ -6,7 +6,7 @@
            var cupom =form_pedido.cupom.value
            var mensagem =form_pedido.mensagem.value
            var radios = document.getElementsByName("pagamento")
-           var pagamento = ''
+           var formapagamento = ''
            
            if(nome==""){
            alert("Por favor, informe seu nome completo para o pedido ser realizado.")
@@ -35,15 +35,24 @@
         }
 
         if(radios[0].checked){
-           pagamento = 'Dinheiro'
+           formapagamento = 'Dinheiro'
+           return true
+
            
         } else if (radios[1].checked){
-           pagamento = 'Cartão de Crédito'
-        } else  {
-           pagamento =" Cartão de Débito"
+           formapagamento = 'Cartão de Crédito'
+           return true
+
+
+        } else {
+           formapagamento =" Cartão de Débito"
+        } 
+
+        if (radios[0].checked == false && radios[1].checked == false && radios[2].checked == false){
+           alert("Escolha uma forma de pagamento, por favorzi")
+         radios.focus()
+         return false
         }
-        alert(`${nome}, ${endereco}, ${numero}, ${bairro}, ${pagamento}`)
-     
     } 
 
 //     document.getElementById("btnSubmit").onclick = function() {
