@@ -284,19 +284,22 @@ padding: 5px;
 
 }
 
-
+/* PEDIDOS */
+.flex-container {
+  display: flex;
+}
   /* ==== --- CSS do formulario -- =====*/
-.divinput{
+form {
   background-color:rgba(245, 245, 248, 0.719); 
   box-shadow: 1px 1px 1px;
-  width:37.5em;
+  width:35em;
   min-height:25em;
   padding:2em;
 }
 #nome, #endereco, #cupom{
-  width:30em;height:3em}
-
-
+  width:30em;
+  height:3em
+}
 
 fieldset {
   border: none;
@@ -317,6 +320,7 @@ body, input, input[type="radio"], textarea {
 
 .campo {
     margin-bottom: 1em;
+    
 }
 
 .campo label {
@@ -331,24 +335,16 @@ fieldset.grupo .campo {
     margin-right: 1em;
 }
 
-.flex-container {
-  display: flex;
-
-}
 #pedido input, #pedido textarea {
   outline: none;
 }
 .campo input[type="text"]{
     padding: 0.2em;
     border: 1px solid #CCC;
-    box-shadow: 0.1px 0.5px 0.2px;
-    display: block;
 }
 .campo textarea {
-    padding: 0.2em;
-    border: 1px solid #CCC;
-    display: block;
-    width:38em
+  width: 97%;    
+  border: 1px solid #CCC;
 }
 
 .botao {
@@ -386,7 +382,7 @@ font-family: 'Noto Sans JP', sans-serif;
 }
 
 
-
+/* Classes modificadas no JavaScript */
 .active {
   display: block;
 }
