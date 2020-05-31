@@ -5,6 +5,8 @@
            var bairro =form_pedido.bairro.value
            var cupom =form_pedido.cupom.value
            var mensagem =form_pedido.mensagem.value
+           var radios = document.getElementsByName("pagamento")
+           var pagamento = ''
            
            if(nome==""){
            alert("Por favor, informe seu nome completo para o pedido ser realizado.")
@@ -31,8 +33,27 @@
            form_pedido.bairro.focus()
            return false 
         }
+
+        if(radios[0].checked){
+           pagamento = 'Dinheiro'
+           
+        } else if (radios[1].checked){
+           pagamento = 'Cartão de Crédito'
+        } else  {
+           pagamento =" Cartão de Débito"
+        }
+        alert(`${nome}, ${endereco}, ${numero}, ${bairro}, ${pagamento}`)
      
     } 
+
+//     document.getElementById("btnSubmit").onclick = function() {
+      
+//       for (var i = 0; i < radios.length; i++) {
+//           if (radios[i].checked) {
+//               console.log("Escolheu: " + radios[i].value);
+//           }
+//       }
+//   };
 
    //  document.getElementsByClassName("i-lanches").click(function(){
    //     document.getElementById("lanches
