@@ -72,7 +72,7 @@ $('#i-pedidos').click(function(i){
          var mensagem =form_pedido.mensagem.value
          var radios = document.getElementsByName("pagamento")
          var formapagamento = ''
-         
+         console.log(valida)
          if(nome==""){
          alert("Por favor, informe seu nome completo para o pedido ser realizado.")
          form_pedido.nome.focus()

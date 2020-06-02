@@ -43,7 +43,7 @@
                         <a id="i-adicionais" href="#adicionais">Adicionais</a>
                     </li>
                     <li>
-                        <div class="icone"><i class="fas fa-envelope"></i></div>
+                        <div class="icone"><i class="fas fa-mobile"></i></div>
                         <a id="i-pedidos" href="#pedido">Pedidos</a>
                     </li>
                 </ul>
@@ -364,8 +364,8 @@
         </div>
         <div class="flex-container">
             <div class="divinput">
-                <form action="#">
-                 <fieldset>
+                <form action="#" method="GET" name="form_pedido" id="form_pedido" onsubmit="return valida">
+                    <fieldset>
                     <fieldset class="grupo">
                        <div class="campo"> 
                           <label for="nome">Nome:</label>
@@ -414,7 +414,7 @@
                      <textarea rows="6" id="mensagem" name="mensagem" placeholder="observações"></textarea>
                     </div>
                     <div class="campo">
-                     <input type="button" value="Pedir no WhatsApp" class="botao">
+                     <input type="button" value="Pedir no WhatsApp" class="botao" onclick= 'return valida()'>
                     </div>
          
          
