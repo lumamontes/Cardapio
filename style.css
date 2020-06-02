@@ -240,7 +240,7 @@ padding: 5px;
   font-size: 14px;
   color: rgb(110, 110, 110);
 }
-#titulo_valor {
+.titulo_valor {
   margin-left: 500px
 }
 
@@ -255,7 +255,7 @@ padding: 5px;
 }
 
 
-#titulo_quant, .lanches_quant {
+.titulo_quant, .lanches_quant {
   margin-left: 100px;
 }
 
@@ -387,5 +387,5 @@ font-family: 'Noto Sans JP', sans-serif;
 }
 .hidden {
   display: none;
+  visibility: hidden;
 }
-

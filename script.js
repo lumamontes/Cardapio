@@ -1,4 +1,5 @@
 $(function(){
+
    $('#i-sobre').click(function(i){
       $("#lanches").addClass("hidden")
      $("#bebidas").addClass("hidden")
@@ -7,7 +8,7 @@ $(function(){
 
      $('#sobre').removeClass('hidden');
      $(this).addClass('active');
-     
+
    });
 }); 
 
@@ -60,7 +61,7 @@ $('#i-pedidos').click(function(i){
     $(this).addClass('active');
 
 });
-});    
+}); 
        
       function valida(){
          var nome =form_pedido.nome.value
@@ -123,6 +124,7 @@ $('#i-pedidos').click(function(i){
    var itens = document.getElementsByClassName("lanches_info")[0]
    var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
    var item = itensQuantidade.getElementsByClassName('item_quant').innerHTML
+   var btnAdicionar = itens.getElementsByClassName("btnA")[0]
    
    btnAdicionar.addEventListener('click', () => {
     var itens = document.getElementsByClassName("lanches_info")[0]
@@ -140,6 +142,17 @@ function retirarItem(){
 
    var btnRemove = itens.getElementsByClassName("btnB")[0]
    btnRemove.addEventListener('click', retirarItem)
+   console.log("lanches_info")
+
+   function nome(){
+      var nome= form_pedido.nome.value
+      if(nome==""){
+          alert("Por favor, informe seu nome completo para o pedido ser realizado")
+          return false
+      }
+      var regex=/[]/
+  }
+   
 
 
 
