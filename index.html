@@ -34,13 +34,13 @@
                         <div class="icone"><i class="fas fa-hamburger"></i></div>
                         <a id="i-lan" class="active" href="#lanches">Lanches</a>
                     </li>
+                    
                     <li>
+                        <div class="icone"><i class="fas fa-plus"></i></div>
+                        <a id="i-adicionais" href="#adicionais">Adicionais</a>
+                    </li><li>
                         <div class="icone"><i class="fas fa-wine-bottle"></i></div>
                         <a id="i-bebidas" href="#bebidas">Bebidas</a>
-                    </li>
-                    <li>
-                        <div class="icone"><i class="fas fa-envelope"></i></div>
-                        <a id="i-adicionais" href="#adicionais">Adicionais</a>
                     </li>
                     <li>
                         <div class="icone"><i class="fas fa-mobile"></i></div>
@@ -50,7 +50,7 @@
                 </nav>
                 <footer>
                     <a href="">Lorem ipsum</a>
-                    <p> Developed by noizes <a href=""></a></p>
+                    <p>  <a href="">Developed by noizes</a></p>
                 </footer>
         </header>
     </header>
@@ -154,9 +154,6 @@
                                         <i class="fas fa-plus-circle btnA"></i>
                                     </div>
                                     <div>
-                                        <i class="far fa-arrow-alt-circle-left"></i>
-                                        <span> 0 </span>
-                                        <i class="far fa-arrow-alt-circle-right"></i>
                                         <i class="fas fa-minus-circle btnB"></i>
                                         <span class="item_quant">0 </span>
                                         <i class="fas fa-plus-circle btnA"></i>
@@ -233,37 +230,28 @@
 
 
                             <div class="lanches_quant">
-                                <div>
-                                    <i class="far fa-arrow-alt-circle-left"></i>
-                                    <span> 0 </span>
-                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                <div>                                  
                                     <i class="fas fa-minus-circle btnB"></i>
                                     <span class="item_quant"> 0 </span>
                                     <i class="fas fa-plus-circle btnA"></i>
                                 </div>
                                 <br>
                                 <div>
-                                    <i class="far fa-arrow-alt-circle-left"></i>
-                                    <span> 0 </span>
-                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                    
                                     <i class="fas fa-minus-circle btnB"></i>
                                     <span class="item_quant">0 </span>
                                     <i class="fas fa-plus-circle btnA"></i>
                                 </div>
                                 <br>
                                 <div>
-                                    <i class="far fa-arrow-alt-circle-left"></i>
-                                    <span> 0 </span>
-                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                  
                                     <i class="fas fa-minus-circle btnB"></i>
                                     <span class="item_quant"> 0 </span>
                                     <i class="fas fa-plus-circle btnA"></i>
                                 </div>
                                 <br>
                                 <div>
-                                    <i class="far fa-arrow-alt-circle-left"></i>
-                                    <span> 0 </span>
-                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                   
                                     <i class="fas fa-minus-circle btnB"></i>
                                     <span class="item_quant"> 0 </span>
                                     <i class="fas fa-plus-circle btnA"></i>
@@ -276,7 +264,7 @@
         <div>
             <article class="container">
                 <div>
-                    <h1>Lanches</h1>
+                    <h1>Bebidas</h1>
                     <div>
                         <div class="titulos_table">
 
@@ -333,9 +321,7 @@
                                     <i class="fas fa-plus-circle btnA"></i>
                                 </div>
                                 <div>
-                                    <i class="far fa-arrow-alt-circle-left"></i>
-                                    <span> 0 </span>
-                                    <i class="far fa-arrow-alt-circle-right"></i>
+                                   
                                     <i class="fas fa-minus-circle btnB"></i>
                                     <span class="item_quant">0 </span>
                                     <i class="fas fa-plus-circle btnA"></i>
@@ -364,28 +350,28 @@
         </div>
         <div class="flex-container">
             <div class="divinput">
-                <form action="#" method="GET" name="form_pedido" id="form_pedido" onsubmit="return valida">
+                <form action="#" method="GET" name="form_pedido" id="form_pedido">
                     <fieldset>
                     <fieldset class="grupo">
                        <div class="campo"> 
                           <label for="nome">Nome:</label>
-                          <input type="text" name="nome" id="nome" width="10em" placeholder="Nome e Sobrenome">
+                          <input type="text" name="nome" id="nome" width="10em" placeholder="Nome e Sobrenome" onblur="return nome()">
                        </div>
                     </fieldset>
                      <div class="campo">
                      <label for="endereco">Endereço:</label>
-                     <input type="text" name="endereco" id="endereco" width="10em">
+                     <input type="text" name="endereco" placeholder="Av.amoras da silva, entre groselha e gaucho" id="endereco" width="10em" onblur="return endereco()">
                      </div>
                     <fieldset class="grupo">
                        <div class="campo">
                           <label for="numero">Número:</label>
-                          <input type="text" name="numero" id="numero">
+                          <input type="text" name="numero" placeholder="Ex:2800" id="numero" onblur="return numero()">
                        </div>
 
                        
                        <div class="campo">
                           <label for="bairro">Bairro:</label>
-                          <input type="text" name="bairro" id="bairro">
+                          <input type="text" name="bairro" id="bairro" placeholder="Bairro" onblur="return bairro()">
                        </div>
                    </fieldset>
 
@@ -408,16 +394,16 @@
 
                     <div class="campo">
                      <label for="cupom">Cupom de desconto:</label>
-                     <input type="text" name="cupom" id="cupom">
+                     <input type="text" name="cupom" id="cupom" placeholder="insira aqui seu cupom promocional">
                     </div>
                     <div class="campo">
                      <textarea rows="6" id="mensagem" name="mensagem" placeholder="observações"></textarea>
                     </div>
                     <div class="campo">
-                     <input type="button" value="Pedir no WhatsApp" class="botao" onclick= 'return valida()'>
+                     <input type="button" value="Pedir no WhatsApp" class="botao" onclick= "return valida()">
                     </div>
          
-         
+                 
          
                  </fieldset>
          
