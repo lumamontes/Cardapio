@@ -344,6 +344,7 @@ fieldset.grupo .campo {
 .campo textarea {
   width: 97%;    
   border: 1px solid #CCC;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .botao {
