@@ -182,6 +182,10 @@ function retirarItem(){
    btnRemove.addEventListener('click', retirarItem)
    console.log("lanches_info")
 
+
+
+
+
       
 
 

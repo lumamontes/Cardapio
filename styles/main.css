@@ -1,0 +1,165 @@
+
+/* ====== --GLOBAIS--- ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root {
+   /* reavaliar escolha de cores.. motivos: facilidade de leitura */
+     --azul: #89abad;
+     --branco: rgba(255, 255, 255, 0.705);
+     --preto: #000000ee;
+     --laranja: #F86358;
+     --salmao: #E94F4F;
+
+ }
+
+ body {
+    font-family: 'Noto Sans JP', sans-serif;
+
+ }
+ header {
+     font-size: 20px;
+     padding: 20px;
+
+ }
+
+ ul li {
+  list-style-type: none;
+ }
+
+ p {
+   padding: 5px;
+   margin: 5px 0
+}
+a {
+  text-decoration: none;
+}
+
+.txt-negrito {
+  font-weight: bold;
+}
+.txt-italico {
+  font-style: italic;
+}
+
+
+
+
+
+
+
+/* - ====----MAIN--===- - */
+
+.main {
+  margin-left: 300px; /* Same as the width of the sidebar */
+  background-color: var(--branco);
+}
+section {
+  width: 90%;
+  margin: 30px auto;
+}
+
+
+/* -- Títulos--*/
+
+section h1 {
+font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--preto);
+}
+
+ section h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--laranja);
+  bottom: 0;
+  left: 0;
+} 
+
+
+/* -- SOBRE ---= */
+/* Títulos */
+#sobre .container{
+  padding-top: 5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+
+}
+.sobre h1 {
+  text-transform: uppercase;
+  color: var(--branco);
+  z-index: 2;
+
+
+ }
+.sobre h2{
+  z-index: 2;
+  position: relative;
+}
+
+/* Espaçamento e alinhamentos na página */
+#sobre-info-container {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+
+
+}
+
+#sobre-txt{
+  z-index: 2;
+
+}
+.sobre-icone {
+  color: var(--laranja);
+  padding: 5px;
+}
+
+#sobre-info-container ul li {
+padding: 5px;
+
+}
+
+#sobre {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/variety-of-vegetables-1400172.jpg);
+  background-size: 100%;
+  margin: 0;
+ 
+
+}
+#sobre:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.322);
+  box-shadow: inset 200px 350px 700px #000000de,inset -200px -350px 700px #000000e7;;
+}
+
+
+
+/* Classes modificadas no JavaScript */
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}

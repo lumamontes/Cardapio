@@ -1,0 +1,101 @@
+
+.flex-container {
+    display: flex;
+  }
+  form {
+    background-color:rgba(245, 245, 248, 0.719); 
+    box-shadow: 1px 1px 1px;
+    width:35em;
+    min-height:25em;
+    padding:2em;
+  }
+  #nome, #endereco, #cupom{
+    width:30em;
+    height:3em
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  body, input, input[type="radio"], textarea {
+        font-size: 1em;
+  }
+  
+  .grupo:before, .grupo:after {
+      content: " ";
+      display: table;
+  }
+  
+  .grupo:after {
+      clear: both;
+  }
+  
+  .campo {
+      margin-bottom: 1em;
+      
+  }
+  
+  .campo label {
+      margin-bottom: 0.2em;
+      color: #666;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  fieldset.grupo .campo {
+      float:  left;
+      margin-right: 1em;
+  }
+  
+  /* #pedido input, #pedido textarea {
+    
+  } */
+  .campo input[type="text"]{
+      padding: 0.2em;
+      border: 1px solid #CCC;
+      border-radius: 8px;
+      outline: none;
+  }
+  .campo textarea {
+    width: 97%;    
+    border: 1px solid #CCC;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 8px;
+    outline: none;
+
+  }
+  
+  .botao {
+      width:30em;
+      height:2.5em;
+      font-size: 1.0em;
+      background:#343a40;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      color: #FFF;
+      padding: 0.2em 0.6em;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  
+  .botao:hover {
+      background: #131314;
+      box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+      text-shadow: none;
+  }
+  
+  .botao, input[type="radio"] {
+      cursor: pointer;
+  }
+    /* ==== --- CSS de informação -- =====*/
+    #info{
+  background-color:#fff; 
+  width:18.75em;
+  min-height:25em;
+  padding:2em;
+  float:left;
+  }
+  #info p{font-size:14px;
+  font-family: 'Noto Sans JP', sans-serif; 
+  }

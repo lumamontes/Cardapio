@@ -1,0 +1,63 @@
+ /* ======--- -  CSS HEADER -- --====== */
+
+/* barra lateral espaçamentos e alinhamentos*/
+
+header img {
+    width: 100%;
+    height: auto;
+  }
+  
+  header h1 {
+    font-size: 30px;
+  }
+  
+  header nav {
+    margin-top: 20px;
+  }
+   header ul li{
+      display: flex;
+      flex-direction: row;
+   }
+  
+   .icone {
+    height: 10px;
+    margin-top: 5px;
+  }
+  
+   header footer {
+    padding: 2px;
+    color: var(--branco);
+    font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    text-align: center;
+  }
+  
+    /* fixando a barra lateral  */
+  
+   .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-image: linear-gradient(to bottom,var(--salmao), #6d6d6db0 180%);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable vertical scroll */
+    padding-top: 5px;
+  }
+  
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: var(--branco);
+    display: block;
+  } 
+  
+  .sidenav a:hover,.icone:hover {
+    color: var(--preto)
+  }
