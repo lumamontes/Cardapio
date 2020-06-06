@@ -1,3 +1,7 @@
+    // Enviar no wpp
+    // Atualmente, só as informações adicionadas form
+    // Pensar em lógica pra puxar infos dos itens também 
+    
     $("#enviar").click(function(){
        var nome=$("#nome").val()
        var endereco=$("#endereco").val()
@@ -17,4 +21,7 @@
 
   }
      })
+
+
+
   

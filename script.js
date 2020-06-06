@@ -1,69 +1,6 @@
-$(function(){
-
-   $('#i-sobre').click(function(i){
-      $("#lanches").addClass("hidden")
-     $("#bebidas").addClass("hidden")
-     $("#pedido").addClass("hidden")
-     $("#adicionais").addClass("hidden")
-
-     $('#sobre').removeClass('hidden');
-     $(this).addClass('active');
-
-   });
-}); 
-
-$(function(){
-   $('#i-lan').click(function(i){
-      $("#sobre").addClass("hidden")
-      $("#bebidas").addClass("hidden")
-      $("#pedido").addClass("hidden")
-      $("#adicionais").addClass("hidden")
-
-       $('#lanches').removeClass('hidden');
-       $(this).addClass('active');
-
-   });
-});     
-
-$(function(){
-$('#i-bebidas').click(function(i){
-   $("#lanches").addClass("hidden")
-   $("#sobre").addClass("hidden")
-   $("#pedido").addClass("hidden")
-   $("#adicionais").addClass("hidden")
-
-    $('#bebidas').removeClass('hidden');
-    $(this).addClass('active');
-
-});
-}); 
-
-$(function(){
-$('#i-adicionais').click(function(i){
-   $("#lanches").addClass("hidden")
-   $("#sobre").addClass("hidden")
-   $("#pedido").addClass("hidden")
-   $("#bebidas").addClass("hidden")
-    $('#adicionais').removeClass('hidden');
-    $(this).addClass('active');
-
-});
-}); 
-
-$(function(){
-$('#i-pedidos').click(function(i){
-   $("#lanches").addClass("hidden")
-   $("#sobre").addClass("hidden")
-   $("#adicionais").addClass("hidden")
-   $("#bebidas").addClass("hidden")
-
-    $('#pedido').removeClass('hidden');
-    $(this).addClass('active');
-
-});
-}); 
-       
-     function nome(){
+        //Validações
+        
+        function nome(){
         var nome =form_pedido.nome.value
         if(nome==""){
         alert("Por favor, informe seu nome completo.")
@@ -157,31 +94,35 @@ $('#i-pedidos').click(function(i){
      };
 
 
+     //Adicionar quantidade de itens
+
+//      var itens = document.getElementsByClassName("lanches_info")[0]
+//      var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
+//      var item = itensQuantidade.getElementsByClassName('item_quant').innerHTML
+//      var btnAdicionar = itens.getElementsByClassName("btnA")[0]
+     
+//      btnAdicionar.addEventListener('click', () => {
+//       var itens = document.getElementsByClassName("lanches_info")[0]
+//       var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
+//       var item = itensQuantidade.getElementsByClassName('item_quant')[0]
+//       item.innerHTML = Number(item.innerHTML) + 1;
+//   })
+  
+  
+//   function retirarItem(){
+//      var item = itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML
+//      item--;
+//      itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML = item;
+//   }
+  
+//      var btnRemove = itens.getElementsByClassName("btnB")[0]
+//      btnRemove.addEventListener('click', retirarItem)
+//      console.log("lanches_info")
 
 
-   var itens = document.getElementsByClassName("lanches_info")[0]
-   var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
-   var item = itensQuantidade.getElementsByClassName('item_quant').innerHTML
-   var btnAdicionar = itens.getElementsByClassName("btnA")[0]
-   
-   btnAdicionar.addEventListener('click', () => {
-    var itens = document.getElementsByClassName("lanches_info")[0]
-    var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
-    var item = itensQuantidade.getElementsByClassName('item_quant')[0]
-    item.innerHTML = Number(item.innerHTML) + 1;
-})
 
 
-function retirarItem(){
-   var item = itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML
-   item--;
-   itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML = item;
-}
-
-   var btnRemove = itens.getElementsByClassName("btnB")[0]
-   btnRemove.addEventListener('click', retirarItem)
-   console.log("lanches_info")
-
+  
 
 
 
