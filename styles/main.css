@@ -54,7 +54,7 @@ a {
 /* - ====----MAIN--===- - */
 
 .main {
-  margin-left: 300px; /* Same as the width of the sidebar */
+  margin-left: 280px; /* Same as the width of the sidebar */
   background-color: var(--branco);
 }
 section {
