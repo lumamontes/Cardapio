@@ -62,3 +62,15 @@ $(function(){
  
  });
  }); 
+
+//  const itens = document.querySelectorAll(".icone")
+
+//  for(const item of itens) {
+//      addEventListener("click", "")
+//  }
+
+
+
+
+
+   // adicionar ou remover uma classe com JavaScript
