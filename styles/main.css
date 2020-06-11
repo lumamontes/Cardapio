@@ -45,9 +45,8 @@ a {
 }
 /* - ====----MAIN--===- - */
 
-.main {
+.main{
   margin-left: 280px; /* Same as the width of the sidebar */
-  background-color: var(--branco);
 }
 section {
   width: 90%;

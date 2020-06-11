@@ -21,6 +21,7 @@ $(function(){
  
         $('#lanches').removeClass('hidden');
         $(this).addClass('active');
+
  
     });
  });     
@@ -74,3 +75,18 @@ $(function(){
 
 
    // adicionar ou remover uma classe com JavaScript
+
+
+                   $('input[type=checkbox]').click(function(){ 
+                   const inputs = document.querySelectorAll(".item-checkbox")
+                     for(input of inputs){
+                        const adicionais = document.querySelectorAll(".adicionais")
+                        for (adicional of adicionais){
+                        $('adicional').toggleClass('hidden');
+                        }
+                     }
+
+               
+
+               });
+   
