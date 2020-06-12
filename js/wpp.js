@@ -28,7 +28,7 @@ $(Document).ready(function(){
                  }
          }
 
-       var texto=`${nome},${endereco}, ${bairro}, ${numero}, ${formaSelecionada}, ${pedidoSelecionado}, ${soma}`
+       var texto=`${nome} \n,${endereco} \n\n, ${bairro}, ${numero}, ${formaSelecionada} \n, ${pedidoSelecionado} \n, Valor Total = ${soma}`
        
       var site="https://api.whatsapp.com/send?phone=5596991410023"+texto.replace(" ","%20")
       window.location.href=site;

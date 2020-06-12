@@ -70,23 +70,15 @@ $(function(){
 //      addEventListener("click", "")
 //  }
 
-
-
-
-
    // adicionar ou remover uma classe com JavaScript
+   $('input[type=checkbox]').click(function(){ 
+      const todosInputs = document.getElementsByClassName('item-checkbox')
+      const todosAdicionais = document.getElementsByClassName('adicionais')
+      for(input of todosInputs){   
+         todosAdicionais.toggleClass('hidden')
+      }
+         
+         
+      }
 
-
-                   $('input[type=checkbox]').click(function(){ 
-                   const inputs = document.querySelectorAll(".item-checkbox")
-                     for(input of inputs){
-                        const adicionais = document.querySelectorAll(".adicionais")
-                        for (adicional of adicionais){
-                        $('adicional').toggleClass('hidden');
-                        }
-                     }
-
-               
-
-               });
-   
+   )

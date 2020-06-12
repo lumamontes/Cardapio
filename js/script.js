@@ -94,28 +94,30 @@
 
      //Adicionar quantidade de itens
 
-     var itens = document.getElementsByClassName("item_info")[1]
-     var itensQuantidade = itens.getElementsByClassName("item_quant")[0]
-     var item = itensQuantidade.getElementsByClassName('item_quant').innerHTML
-     var btnAdicionar = itens.getElementsByClassName("btnA")[0]
+//      var itens = document.getElementsByClassName("item_info")[1]
+//      var itensQuantidade = itens.getElementsByClassName("item_quant")[0]
+//      var item = itensQuantidade.getElementsByClassName('item_quant').innerHTML
+//      var btnAdicionar = itens.getElementsByClassName("btnA")[0]
      
-     btnAdicionar.addEventListener('click', () => {
-      var itens = document.getElementsByClassName("lanches_info")[0]
-      var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
-      var item = itensQuantidade.getElementsByClassName('item_quant')[0]
-      item.innerHTML = Number(item.innerHTML) + 1;
-  })
+//      btnAdicionar.addEventListener('click', () => {
+//       var itens = document.getElementsByClassName("lanches_info")[0]
+//       var itensQuantidade = itens.getElementsByClassName("lanches_quant")[0]
+//       var item = itensQuantidade.getElementsByClassName('item_quant')[0]
+//       item.innerHTML = Number(item.innerHTML) + 1;
+//   })
     
-  function retirarItem(){
-     var item = itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML
-     item--;
-     itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML = item;
-  }
+//   function retirarItem(){
+//      var item = itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML
+//      item--;
+//      itensQuantidade.getElementsByClassName('item_quant')[0].innerHTML = item;
+//   }
   
-     var btnRemove = itens.getElementsByClassName("btnB")[0]
-     btnRemove.addEventListener('click', retirarItem)
-     console.log("lanches_info")
+//      var btnRemove = itens.getElementsByClassName("btnB")[0]
+//      btnRemove.addEventListener('click', retirarItem)
+//      console.log("lanches_info")
 
+
+    
 
 
 
