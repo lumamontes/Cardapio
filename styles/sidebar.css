@@ -51,13 +51,14 @@ header img {
   }
   
   
-  .sidenav a {
+ a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     color: var(--branco);
     display: block;
   } 
   
-  .sidenav a:hover,.icone:hover {
+  .sidenav a:hover,.icone:hover, .selected {
+    font-weight: 800;
     color: var(--preto)
   }

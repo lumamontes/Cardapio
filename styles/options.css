@@ -17,6 +17,10 @@
   
 }
 
+.itemitem-info.info-bebidas .txt-bebidas {
+  height: 50px;
+}
+
 img {
   width: 100%;
   height: 200px;
@@ -27,6 +31,13 @@ img {
   flex-direction: column;
   padding: 7px;
   height: 100px;
+}
+
+#bebidas .itens-container .item-info .item-txt {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  height: 50px;
 }
 
 .item-numeros-container{

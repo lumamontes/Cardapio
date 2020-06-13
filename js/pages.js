@@ -11,6 +11,7 @@ $(function(){
  
     });
  }); 
+
  
  $(function(){
     $('#i-lan').click(function(i){
@@ -64,21 +65,13 @@ $(function(){
  });
  }); 
 
-//  const itens = document.querySelectorAll(".icone")
+// const todasLi = document.querySelectorAll('.sidenav li a')
+// for (li of todasLi){
+//    addEventListener("click", selecionarLi)
+// }
+// function selecionarLi(event){
+// const Li = event.target
+// Li.classList.toggle("selected")
 
-//  for(const item of itens) {
-//      addEventListener("click", "")
-//  }
-
+// }
    // adicionar ou remover uma classe com JavaScript
-   $('input[type=checkbox]').click(function(){ 
-      const todosInputs = document.getElementsByClassName('item-checkbox')
-      const todosAdicionais = document.getElementsByClassName('adicionais')
-      for(input of todosInputs){   
-         todosAdicionais.toggleClass('hidden')
-      }
-         
-         
-      }
-
-   )
