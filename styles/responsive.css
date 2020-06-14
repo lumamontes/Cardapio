@@ -1,5 +1,44 @@
-@media (min-width: 600px) {
+@media (max-width: 1000px) {
     .sidenav {
-        display: hidden;
-    }
+     
+        width: 200px; /* Set the width of the sidebar */
+
+      }
+
+    .main{
+        margin-left: 200px; /* Same as the width of the sidebar */
+      }
+
+      .itens-container {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+}
+
+@media (max-width: 900px) {
+    .sidenav {
+        visibility: hidden;
+        width: 0px; /* Set the width of the sidebar */
+
+      }
+      .main{
+        margin-left: 10px; /* Same as the width of the sidebar */
+      }
+
+      .itens-container {
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+@media (max-width: 600px) {
+
+    .sidenav {
+        visibility: hidden;
+
+      }
+
+    .itens-container {
+            display: flex;
+            flex-direction: column;
+      }
 }

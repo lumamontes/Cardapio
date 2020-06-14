@@ -1,3 +1,6 @@
+// JavaScript para adicionar e remover classes HIDDEN e SELECTED
+// na Barra Lateral
+
 $(function(){
 
     $('#i-sobre').click(function(i){
@@ -74,16 +77,6 @@ $(function(){
  
  });
  }); 
- 
- // adicionar ou remover uma classe com JavaScript
 
-// const todasLi = document.querySelectorAll('header li a')
-// for (li of todasLi){
-//    addEventListener("click", selecionarLi)
-// }
-// function selecionarLi(event){
-// const Li = event.target
-// Li.classList.toggle("selected")
-// }
 
 
