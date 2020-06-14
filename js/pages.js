@@ -73,5 +73,8 @@ function selecionarLi(event){
 const Li = event.target
 Li.classList.add("selected")
 
+// if(Li.selected == true) {
+//    alreadySlec
+// }
 }
    // adicionar ou remover uma classe com JavaScript
