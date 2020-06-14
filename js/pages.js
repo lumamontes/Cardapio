@@ -1,7 +1,13 @@
 $(function(){
 
     $('#i-sobre').click(function(i){
-       $("#lanches").addClass("hidden")
+      $(this).toggleClass('selected')
+      $('#i-lan').removeClass('selected')
+      $('#i-bebidas').removeClass('selected')
+      $('#i-pedidos').removeClass('selected')
+      
+      
+      $("#lanches").addClass("hidden")
       $("#bebidas").addClass("hidden")
       $("#pedido").addClass("hidden")
       $("#adicionais").addClass("hidden")
@@ -15,6 +21,11 @@ $(function(){
  
  $(function(){
     $('#i-lan').click(function(i){
+      $(this).toggleClass('selected')
+      $('#i-sobre').removeClass('selected')
+      $('#i-bebidas').removeClass('selected')
+      $('#i-pedidos').removeClass('selected')
+
        $("#sobre").addClass("hidden")
        $("#bebidas").addClass("hidden")
        $("#pedido").addClass("hidden")
@@ -29,6 +40,11 @@ $(function(){
  
  $(function(){
  $('#i-bebidas').click(function(i){
+   $(this).toggleClass('selected')
+   $('#i-sobre').removeClass('selected')
+   $('#i-lan').removeClass('selected')
+   $('#i-pedidos').removeClass('selected')
+
     $("#lanches").addClass("hidden")
     $("#sobre").addClass("hidden")
     $("#pedido").addClass("hidden")
@@ -40,20 +56,14 @@ $(function(){
  });
  }); 
  
- $(function(){
- $('#i-adicionais').click(function(i){
-    $("#lanches").addClass("hidden")
-    $("#sobre").addClass("hidden")
-    $("#pedido").addClass("hidden")
-    $("#bebidas").addClass("hidden")
-     $('#adicionais').removeClass('hidden');
-     $(this).addClass('active');
- 
- });
- }); 
  
  $(function(){
  $('#i-pedidos').click(function(i){
+    $(this).toggleClass('selected')
+    $('#i-sobre').removeClass('selected')
+    $('#i-lan').removeClass('selected')
+    $('#i-bebidas').removeClass('selected')
+
     $("#lanches").addClass("hidden")
     $("#sobre").addClass("hidden")
     $("#adicionais").addClass("hidden")
@@ -64,17 +74,16 @@ $(function(){
  
  });
  }); 
+ 
+ // adicionar ou remover uma classe com JavaScript
 
-const todasLi = document.querySelectorAll('.sidenav li a')
-for (li of todasLi){
-   addEventListener("click", selecionarLi)
-}
-function selecionarLi(event){
-const Li = event.target
-Li.classList.add("selected")
-
-// if(Li.selected == true) {
-//    alreadySlec
+// const todasLi = document.querySelectorAll('header li a')
+// for (li of todasLi){
+//    addEventListener("click", selecionarLi)
 // }
-}
-   // adicionar ou remover uma classe com JavaScript
+// function selecionarLi(event){
+// const Li = event.target
+// Li.classList.toggle("selected")
+// }
+
+
