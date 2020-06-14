@@ -1,4 +1,4 @@
-/* CSS GLOBAL, MAIN E SOBRE(PÁGINA INICIAL) */ 
+/* CSS GLOBAL, MAIN E SOBRE/HOME(PÁGINA INICIAL) */ 
 /* ====== --GLOBAIS--- ===== */
 * {
     margin: 0;
@@ -37,9 +37,14 @@ a {
   text-decoration: none;
 }
 
-.txt-negrito {
-  font-weight: bold;
+.sobre-icone {
+  color: var(--laranja);
+  padding: 5px;
 }
+.txt-negrito {
+  color: var(--preto)
+}
+
 .txt-italico {
   font-style: italic;
 }
@@ -68,10 +73,10 @@ section {
 /* -- Títulos--*/
 
 .main h1 {
-font-size: 32px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     position: relative;
     color: var(--preto);
 }
@@ -89,50 +94,7 @@ font-size: 32px;
 
 
 /* -==- SOBRE(página inicial) ---= */
-/* Títulos */
-#sobre .container{
-  padding-top: 5em;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: var(--branco);
-
-}
-.sobre h1 {
-  text-transform: uppercase;
-  color: var(--branco);
-  z-index: 2;
-
-
- }
-.sobre h2{
-  z-index: 2;
-  position: relative;
-}
-
-/* Espaçamento e alinhamentos na página */
-#sobre-info-container {
-  width: 100%;
-  z-index: 2;
-  position: relative;
-
-
-}
-
-#sobre-txt{
-  z-index: 2;
-
-}
-.sobre-icone {
-  color: var(--laranja);
-  padding: 5px;
-}
-
-#sobre-info-container ul li {
-padding: 5px;
-
-}
-
+/* alinhamento + background */
 #sobre {
   width: 100%;
   height: 100vh;
@@ -140,8 +102,8 @@ padding: 5px;
   background-image: url(../img/background.jpg);
   background-size: 100%;
   margin: 0;
- 
-
+     
+  
 }
 #sobre:after {
   content: '';
@@ -154,6 +116,81 @@ padding: 5px;
   background: rgba(0, 0, 0, 0.322);
   box-shadow: inset 200px 350px 700px #000000de,inset -200px -350px 700px #000000e7;;
 }
+#sobre .container{
+  padding-top: 2em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--branco);
+  
+}
+/* Títulos */
+.sobre h1 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: var(--branco);
+  z-index: 2;
+
+ }
+ .sobre h1 span {
+   color: var(--salmao);
+ }
+.sobre h2{
+  z-index: 2;
+  position: relative;
+}
+
+/* Espaçamento e alinhamentos dos conteúdos*/
+#sobre-info-container {
+  max-width: 85%;
+  z-index: 2;
+  position: relative;
+  margin: 5px auto;
+}
+
+#sobre-txt{
+  z-index: 2;
+  max-width: 90%;
+  margin: 5px auto;
+
+}
+#sobre-txt p {
+  text-align: justify;
+}
+
+#sobre-info-container ul {
+  max-width: 70%;
+  
+  margin: 0px auto;
+    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+
+}
+
+#sobre-info-container ul li {
+  margin: 20px auto;
+  padding: 5px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--branco);
+  
+  border-radius: 8px;
+  box-shadow: 5px 10px 50px #3b3b3b;
+}
+#sobre-info-container ul li:hover{
+  opacity: 80%;
+}
+
+#sobre-info-container ul li img {
+  width: 60px;
+  height: auto;
+}
+
 
 
 

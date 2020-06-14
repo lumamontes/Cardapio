@@ -65,13 +65,13 @@ $(function(){
  });
  }); 
 
-// const todasLi = document.querySelectorAll('.sidenav li a')
-// for (li of todasLi){
-//    addEventListener("click", selecionarLi)
-// }
-// function selecionarLi(event){
-// const Li = event.target
-// Li.classList.toggle("selected")
+const todasLi = document.querySelectorAll('.sidenav li a')
+for (li of todasLi){
+   addEventListener("click", selecionarLi)
+}
+function selecionarLi(event){
+const Li = event.target
+Li.classList.add("selected")
 
-// }
+}
    // adicionar ou remover uma classe com JavaScript

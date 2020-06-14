@@ -1,4 +1,4 @@
-$(Document).ready(function(){
+$(document).ready(function(){
       $("#enviar").click(function(){
        var nome=$("#nome").val()
        var endereco=$("#endereco").val()
