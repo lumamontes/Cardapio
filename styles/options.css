@@ -13,11 +13,12 @@
   flex-direction: column;
 
   background-color:#ffffff;
+  
   padding-bottom: 6px;
   
 }
 
-.itemitem-info.info-bebidas .txt-bebidas {
+.item-info.info-bebidas .txt-bebidas {
   height: 50px;
 }
 

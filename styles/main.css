@@ -1,3 +1,4 @@
+/* CSS GLOBAL, MAIN E SOBRE(PÁGINA INICIAL) */ 
 /* ====== --GLOBAIS--- ===== */
 * {
     margin: 0;
@@ -6,7 +7,6 @@
  }
 
  :root {
-   /* reavaliar escolha de cores.. motivos: facilidade de leitura */
      --azul: #89abad;
      --branco: rgba(255, 255, 255, 0.705);
      --preto: #000000ee;
@@ -43,6 +43,17 @@ a {
 .txt-italico {
   font-style: italic;
 }
+
+
+/* Classes modificadas no JavaScript */
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 /* - ====----MAIN--===- - */
 
 .main{
@@ -77,7 +88,7 @@ font-size: 32px;
 } 
 
 
-/* -- SOBRE ---= */
+/* -==- SOBRE(página inicial) ---= */
 /* Títulos */
 #sobre .container{
   padding-top: 5em;
@@ -126,7 +137,7 @@ padding: 5px;
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(../img/variety-of-vegetables-1400172.jpg);
+  background-image: url(../img/background.jpg);
   background-size: 100%;
   margin: 0;
  
@@ -146,14 +157,6 @@ padding: 5px;
 
 
 
-/* Classes modificadas no JavaScript */
-.active {
-  display: block;
-}
-.hidden {
-  display: none;
-  visibility: hidden;
-}
 
 
 /* .ADDactive {
