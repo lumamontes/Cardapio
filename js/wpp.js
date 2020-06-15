@@ -10,9 +10,8 @@ $(document).ready(function(){
        var cupom = $("#cupom").val()
 
     //    if(cupom.val() === LUMA) {
-
-    //    }
-    //    console.log(cupom)
+    //         soma - 10
+    //    }    
        
        // FORMA de pagamento selecionada
        const formasDePagamento= document.querySelectorAll("form input[type=radio]")
