@@ -7,7 +7,7 @@
 
     <script src="https://kit.fontawesome.com/ac4c6e2b8b.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="img/icon.ico" />
+    <link rel="shortcut icon" href="img/icon.ico"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -26,7 +26,7 @@
     <header class="sidenav">
         <header class="sidenav">
             <div>
-                <img src="img/delivery-man.png">
+                <img src="img/sobre/icon.svg">
                 <h1> <a href="">Sistema Delivery</a></h1>
                 <ul>
                     <li>
@@ -68,9 +68,9 @@
                     <div id="sobre-txt">
                         <h2>Simples e prático</h2>
                         <p class="txt-italico">Profissionais altamente qualificados,
-                            com ampla experiência no ramo gastronômico, proporcionando assim a elaboração e preparo de
+                            com ampla experiência no ramo gastronômico. Proporcionamos a elaboração e preparo de
                             saborosos pratos, trabalhando sempre com ingredientes
-                            selecionados, de alta qualidade e buscando a plena satisfação dos nossos clientes.</p>
+                            selecionados, de alta qualidade. Sempre buscando a plena satisfação dos nossos clientes!</p>
                     </div>
 
                     <ul>
@@ -600,8 +600,17 @@
 
                                 <div class="campo">
                                     <label for="bairro">Bairro:</label>
-                                    <input type="text" name="bairro" id="bairro" placeholder="Bairro"
-                                        onblur="return bairro()">
+                                        <select name="bairro" required id="">
+                                            <option value="">Selecione o Bairro</option>
+                                            <option value=3,00 >Zerão</option>
+                                            <option value=4,00 >Santa Rita</option>
+                                            <option value=5,00 >Buritizal</option>
+                                            <option value=6,00>Centro</option>
+                                            <option value=7,00>Açai</option>
+                                            <option value=8,00>Outro</option>
+                                        </select>
+                                    <!-- <input type="text" name="bairro" id="bairro" placeholder="Bairro"
+                                        onblur="return bairro()"> -->
                                 </div>
                             </fieldset>
 

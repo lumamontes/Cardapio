@@ -86,7 +86,7 @@
    // function valida(){
    //      nome()
    //      endereco()
-   //      numero()
+   //      numero()  
    //      bairro()
    //      radio()
    //   };

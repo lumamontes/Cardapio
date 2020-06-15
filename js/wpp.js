@@ -7,6 +7,12 @@ $(document).ready(function(){
        var numero=$("#numero").val()
        var bairro=$("#bairro").val()
        var observacao = $("textarea").val()
+       var cupom = $("#cupom").val()
+
+       if(cupom.val() === LUMA) {
+
+       }
+       console.log(cupom)
        
        // FORMA de pagamento selecionada
        const formasDePagamento= document.querySelectorAll("form input[type=radio]")
@@ -20,15 +26,13 @@ $(document).ready(function(){
             
         }
 
-        // Valor do Pedido
-        var soma = 0; 
-       
+      
         // Pedido Selecionado
         
         var pedido = "" 
         const pedidosDisponiveis = document.querySelectorAll("input[type=checkbox]")
         var pedidoSelecionado = ""
-    
+        var soma = 0; 
         for ( pedido of pedidosDisponiveis) {
             var pedidoSelecionados = pedido.checked
             
@@ -50,17 +54,43 @@ $(document).ready(function(){
                 soma+= adicionaisValores
             }
             
-        }       
-        var valorTotal = soma + TaxaDeEntrega
-        var texto=`${nome};${endereco} ; ${bairro}; ${numero}; ${observacao}; 
+        }
+        
+        //Taxa de entrega
+        // Valor do Pedido
+        var TaxaDeEntrega = 0;
+
+        const Bairros = document.querySelectorAll("option")
+        if(Bairros[1].selected==true){
+            TaxaDeEntrega += parseInt(Bairros[1].value)
+            
+        } else if(Bairros[2].selected==true){
+            TaxaDeEntrega += parseInt(Bairros[2].value)
+            
+        } else if(Bairros[3].selected==true) {
+            TaxaDeEntrega += parseInt(Bairros[3].value)
+            
+        } else if(Bairros[4].selected==true) {
+            TaxaDeEntrega += parseInt(Bairros[4].value)
+            
+        } else if (Bairros[5].selected==true) {
+            TaxaDeEntrega += parseInt(Bairros[5].value)
+            
+        }
+        // console.log(soma)
+        console.log(soma+TaxaDeEntrega)
+        // console.log(TaxaDeEntrega)
+        
+        // var valorTotal = soma +TaxaDeEntrega;
+        // console.log(valorTotal)
+        var texto=`${nome};${endereco} %0a ; ${bairro}; %0a ${numero}; ${observacao}; 
         // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, Adicionais: ${adicionalSelecionado},
          Valor Pedido = ${soma},00 
-         ;Taxa de entrega: 
-         ;Valor Total:` 
+         ;Taxa de entrega = ${TaxaDeEntrega}
+         ;Valor Total: ${soma+TaxaDeEntrega}` 
         
-        var site="https://api.whatsapp.com/send?phone=5596991410023"+texto.replace(" ","%20")
+        var site="https://api.whatsapp.com/send?phone=5596991910012&text="+texto.replace(" ","%20","%0a")
         window.location.href= site;
-        console.log(site)
 
         
     })
