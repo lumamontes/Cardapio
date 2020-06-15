@@ -1,5 +1,4 @@
-// JavaScript para adicionar e remover classes HIDDEN e SELECTED
-// na Barra Lateral
+// Adicionar e remover classes HIDDEN, SELECTED e AlturaAuto
 
 $(function(){
 
@@ -82,7 +81,6 @@ $(function(){
    $(".btnAdd1").click(function(i){
      $('#adicionais1').toggleClass('hidden')
      $('.item-info-1').toggleClass('alturaAuto')
-     console.log(i)
     })
 
     $(".btnAdd2").click(function(i){
@@ -113,30 +111,6 @@ $(function(){
       $('.item-info-6').toggleClass('alturaAuto')
 
      })
-
-
-     const botao = document.getElementsByClassName('btnAdd2')
-     
-    //  $(".btnAdd3").click(function(i){
-    //   $('#adicionais3').toggleClass('hidden')
-    //   $('.item-info-3').css('height', 'auto')
-    //  })
-
-    //  $(".btnAdd4").click(function(i){
-    //   $('#adicionais4').toggleClass('hidden')
-    //   $('.item-info-4').css('height', 'auto')
-    //  })
-
-    //  $(".btnAdd5").click(function(i){
-    //   $('#adicionais5').toggleClass('hidden')
-    //   $('.item-info-5').css('height', 'auto')
-    //  })
-
-    //  $(".btnAdd6").click(function(i){
-    //   $('#adicionais6').toggleClass('hidden')
-    //   $('.item-info-6').css('height', 'auto')
-    //  })
- 
 
 
  
