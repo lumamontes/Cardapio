@@ -9,10 +9,10 @@ $(document).ready(function(){
        var observacao = $("textarea").val()
        var cupom = $("#cupom").val()
 
-       if(cupom.val() === LUMA) {
+    //    if(cupom.val() === LUMA) {
 
-       }
-       console.log(cupom)
+    //    }
+    //    console.log(cupom)
        
        // FORMA de pagamento selecionada
        const formasDePagamento= document.querySelectorAll("form input[type=radio]")
@@ -57,40 +57,41 @@ $(document).ready(function(){
         }
         
         //Taxa de entrega
-        // Valor do Pedido
         var TaxaDeEntrega = 0;
-
+        var bairro = ""
         const Bairros = document.querySelectorAll("option")
         if(Bairros[1].selected==true){
+            bairro = 'Zerão'
             TaxaDeEntrega += parseInt(Bairros[1].value)
             
         } else if(Bairros[2].selected==true){
             TaxaDeEntrega += parseInt(Bairros[2].value)
-            
+            bairro = 'Santa Rita'
         } else if(Bairros[3].selected==true) {
             TaxaDeEntrega += parseInt(Bairros[3].value)
+            bairro = 'Buritizal'
             
         } else if(Bairros[4].selected==true) {
             TaxaDeEntrega += parseInt(Bairros[4].value)
+            bairro = 'Centro'
             
         } else if (Bairros[5].selected==true) {
             TaxaDeEntrega += parseInt(Bairros[5].value)
+            bairro = 'Açai'
             
+        } else {
+            TaxaDeEntrega += parseInt(Bairros[6].value)
+            bairro = 'Outro'
         }
-        // console.log(soma)
-        console.log(soma+TaxaDeEntrega)
-        // console.log(TaxaDeEntrega)
-        
-        // var valorTotal = soma +TaxaDeEntrega;
-        // console.log(valorTotal)
-        var texto=`${nome};${endereco} %0a ; ${bairro}; %0a ${numero}; ${observacao}; 
-        // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, Adicionais: ${adicionalSelecionado},
-         Valor Pedido = ${soma},00 
-         ;Taxa de entrega = ${TaxaDeEntrega}
-         ;Valor Total: ${soma+TaxaDeEntrega}` 
+
+        var texto=`${nome};${endereco}; ${bairro}; ${numero}; ${observacao}; 
+        // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, ${adicionalSelecionado},
+         Valor do Pedido = ${soma},00 
+         ;Taxa de entrega = ${TaxaDeEntrega},00
+         ;Valor Total: ${soma+TaxaDeEntrega},00`
         
         var site="https://api.whatsapp.com/send?phone=5596991910012&text="+texto.replace(" ","%20","%0a")
-        window.location.href= site;
+        window.location.href=site;
 
         
     })
