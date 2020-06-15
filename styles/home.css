@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+input[type=checkbox] {
+  width: 50px;
+  height: 25px;
+}
 .sobre-icone {
   color: var(--laranja);
   padding: 5px;
