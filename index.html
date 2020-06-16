@@ -7,13 +7,13 @@
 
     <script src="https://kit.fontawesome.com/ac4c6e2b8b.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="img/icon.ico" />
+    <link rel="shortcut icon" href="img/icon.ico"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/itens.css">
     <link rel="stylesheet" href="styles/pedido.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -72,34 +72,44 @@
                             saborosos pratos, trabalhando sempre com ingredientes
                             selecionados, de alta qualidade. Sempre buscando a plena satisfação dos nossos clientes!</p>
                     </div>
-                </div>
 
-                <div id="slide">
-                    <div id="voltar">
-                        <i class="fas fa-angle-double-left"></i>
-                    </div>
-                    <figure>
+                    <ul>
+                        <li href="#lanches">
+                            <p>
+                                <img src="img/sobre/menu.svg" alt="">
+                            </p>
+                            <span class="txt-negrito">Escolha</span></i>
+                        </li>
 
-                        <img id="1"
-                            src="https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Google">
+                        <li>
+                            <p>
+                                <img src="img/sobre/icon.svg" alt="">
+                            </p>
+                            <span class="txt-negrito">Peça</span></i>
+                        </li>
 
+                        <!-- <li>
+                            <p>
+                                <img src="img/sobre/cook.png" alt="">
+                            </p>
+                            <span class="txt-negrito">3. Aguarde</span></i>
+                        </li> -->
 
-                        <img 
-                            id="2"
-                            src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Facebook">
+                        <li>
+                            <p>
+                                <img src="img/sobre/fork.png" alt="">
+                            </p>
+                            <span class="txt-negrito">Coma!</span></i>
+                        </li>
 
-                        <img 
-                        id="3"
-                        src="https://images.pexels.com/photos/1062269/pexels-photo-1062269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="Instagram">
+                        <!-- <li>
+                            <p>
+                                <img src="img/sobre/review.png" alt="">
+                            </p>
+                            <span class="txt-negrito">5.Avalie</span></i>
+                        </li> -->
 
-                    </figure>
-
-                    <div id="avancar">
-                        <i class="fas fa-angle-double-right"></i>
-                    </div>
+                    </ul>
                 </div>
                 <div>
         </section>
@@ -127,7 +137,7 @@
                                 </div>
 
                                 <div class="item_quant">
-
+                                    
                                     <div>
                                         <input type="checkbox" value=7,00 name="item-checkbox" class="item-checkbox"
                                             id="Pizza">
@@ -145,16 +155,13 @@
                                 <div class="itens-adicionais">
                                     <strong>Adicionais</strong>
                                     <ul class="radios-add">
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Pizza"
-                                                id="Bacon"> Bacon</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Pizza" id="Bacon"> Bacon</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=4,00 name="" alt="Pizza"
-                                                id="Queijo"> Queijo</li>
+                                        <li><input type="radio" class="input-add" value=4,00 name="" alt="Pizza" id="Queijo"> Queijo</li>
                                         <li>R$4,00</li>
 
-                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Pizza"
-                                                id="tomate"> Tomate</li>
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Pizza" id="tomate"> Tomate</li>
                                         <li>R$1,00</li>
 
                                     </ul>
@@ -196,20 +203,16 @@
                                 <div class="itens-adicionais">
                                     <strong>Adicionais</strong>
                                     <ul class="radios-add">
-                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Macarrão"
-                                                id="Tomate"> Tomate</li>
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Macarrão"  id="Tomate"> Tomate</li>
                                         <li>R$1,00</li>
 
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Macarrão"
-                                                id="Queijo"> Queijo</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Macarrão" id="Queijo"> Queijo</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=5,00 name="" alt="Macarrão"
-                                                id="Molho"> Molho</li>
+                                        <li><input type="radio" class="input-add" value=5,00 name="" alt="Macarrão" id="Molho"> Molho</li>
                                         <li>R$5,00</li>
 
-                                        <li><input type="radio" class="input-add" value=5,00 name="" alt="Macarrão"
-                                                id="Molho Branco"> Molho Branco</li>
+                                        <li><input type="radio" class="input-add" value=5,00 name="" alt="Macarrão" id="Molho Branco"> Molho Branco</li>
                                         <li>R$5,00</li>
                                     </ul>
                                 </div>
@@ -249,20 +252,16 @@
                                 <div class="itens-adicionais">
                                     <strong>Adicionais</strong>
                                     <ul class="radios-add">
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer1"
-                                                id="Bacon"> Bacon</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer1" id="Bacon"> Bacon</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer1"
-                                                id="Queijo"> Queijo</li>
+                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer1" id="Queijo"> Queijo</li>
                                         <li>R$2,00</li>
 
-                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer1"
-                                                id="Batata Frita"> Batata Frita</li>
+                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer1"id="Batata Frita"> Batata Frita</li>
                                         <li>R$7,00</li>
 
-                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer1"
-                                                id="Cebola">Cebola</li>
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer1" id="Cebola">Cebola</li>
                                         <li>R$1,00</li>
                                     </ul>
                                 </div>
@@ -303,20 +302,16 @@
                                 <div class="itens-adicionais">
                                     <strong>Adicionais</strong>
                                     <ul class="radios-add">
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer2"
-                                                id="Bacon"> Bacon</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer2" id="Bacon"> Bacon</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer2"
-                                                id="Queijo"> Queijo</li>
+                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer2" id="Queijo"> Queijo</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer2"
-                                                id="Batata Frita"> Batata Frita</li>
+                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer2" id="Batata Frita"> Batata Frita</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer2"
-                                                id="Cebola">Cebola</li>
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer2" id="Cebola">Cebola</li>
                                         <li>R$3,00</li>
                                     </ul>
                                 </div>
@@ -356,20 +351,16 @@
                                 <div class="itens-adicionais">
                                     <strong>Adicionais</strong>
                                     <ul class="radios-add">
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer3"
-                                                id="Bacon"> Bacon</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Hamburguer3" id="Bacon"> Bacon</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer3"
-                                                id="Queijo"> Queijo</li>
+                                        <li><input type="radio" class="input-add" value=2,00 name="" alt="Hamburguer3" id="Queijo"> Queijo</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer3"
-                                                id="Batata Frita"> Batata Frita</li>
+                                        <li><input type="radio" class="input-add" value=7,00 name="" alt="Hamburguer3"id="Batata Frita"> Batata Frita</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer3"
-                                                id="Cebola">Cebola</li>
+                                        <li><input type="radio" class="input-add" value=1,00 name="" alt="Hamburguer3" id="Cebola">Cebola</li>
                                         <li>R$3,00</li>
                                     </ul>
                                 </div>
@@ -407,12 +398,10 @@
                                 <div class="itens-adicionais">
                                     <strong>Adicionais</strong>
                                     <ul class="radios-add">
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Melancia"
-                                                id="Maça"> Maça</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Melancia" id="Maça"> Maça</li>
                                         <li>R$3,00</li>
 
-                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Melancia"
-                                                id="Banana"> Banana</li>
+                                        <li><input type="radio" class="input-add" value=3,00 name="" alt="Melancia" id="Banana"> Banana</li>
                                         <li>R$3,00</li>
                                     </ul>
                                 </div>
@@ -615,9 +604,9 @@
 
                                         <select name="bairro" required id="">
                                             <option value="">Selecione o Bairro</option>
-                                            <option value=3,00>Zerão</option>
-                                            <option value=4,00>Santa Rita</option>
-                                            <option value=5,00>Buritizal</option>
+                                            <option value=3,00 >Zerão</option>
+                                            <option value=4,00 >Santa Rita</option>
+                                            <option value=5,00 >Buritizal</option>
                                             <option value=6,00>Centro</option>
                                             <option value=7,00>Açai</option>
                                             <option value=10,00>Outro</option>
@@ -675,7 +664,6 @@
         </section>
     </div>
     <script src="jquery-3.5.0.min.js"></script>
-    <script src="js/slide.js"></script>
     <script src="js/script.js"></script>
     <script src="js/wpp.js"></script>
     <script src="js/pages.js"></script>
