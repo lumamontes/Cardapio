@@ -7,11 +7,6 @@ $(document).ready(function(){
        var numero=$("#numero").val()
        var bairro=$("#bairro").val()
        var observacao = $("textarea").val()
-       var cupom = $("#cupom").val()
-
-    //    if(cupom.val() === LUMA) {
-    //         soma - 10
-    //    }    
        
        // FORMA de pagamento selecionada
        const formasDePagamento= document.querySelectorAll("form input[type=radio]")
@@ -48,7 +43,7 @@ $(document).ready(function(){
         var adicionalSelecionado = ""
         for (adicional of AdicionaisDisponiveis){
             if(adicional.checked == true){
-                adicionalSelecionado += `${adicional.alt}: ${adicional.id} -> ${adicional.value} Reais;`
+                adicionalSelecionado += `${adicional.alt} - Adicional: ${adicional.id} -> ${adicional.value} Reais;`
                 var adicionaisValores = parseInt(adicional.value)
                 soma+= adicionaisValores
             }
@@ -83,15 +78,20 @@ $(document).ready(function(){
             bairro = 'Outro'
         }
 
+        var cupom = $("#cupom").val()
+           if( cupom == 'cupom10' ) {
+           var desconto = 10
+        }    
+
         var texto=`${nome};${endereco}; ${bairro}; ${numero}; ${observacao}; 
         // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, ${adicionalSelecionado},
          Valor do Pedido = ${soma},00 
          ;Taxa de entrega = ${TaxaDeEntrega},00
-         ;Valor Total: ${soma+TaxaDeEntrega},00`
+         ;Desconto = ${desconto},00 
+         ;Valor Total: ${(soma+TaxaDeEntrega) - desconto},00`
         
         var site="https://api.whatsapp.com/send?phone=5596991910012&text="+texto.replace(" ","%20","%0a")
         window.location.href=site;
-
         
     })
 })
