@@ -1,6 +1,6 @@
         //Validações
-      
-   function nome(){
+   
+   function Vnome(){
       var nome =form_pedido.nome.value
       if(nome==""){
       alert("Por favor, informe seu nome completo.")
@@ -20,13 +20,13 @@
    if(nome.length>=30){
       alert("Por favor, digite até 30 caracteres!")
    }
-   
+
    if(nome.length<=2){
       alert("Digite seu nome.")
    }
 
    }
-   function endereco(){
+   function Vendereco(){
       var endereco =form_pedido.endereco.value
       if(endereco==""){
       alert("Por favor, informe seu endereço.")
@@ -37,7 +37,7 @@
       }
    }
 
-   function numero(){
+   function Vnumero(){
       var numero =form_pedido.numero.value
       if(numero==""){
          alert("Informe o número da sua casa ou apartamento.")
@@ -50,34 +50,16 @@
          alert("digite um numero válido")
       }
    }
-   function bairro(){
-      var bairro =form_pedido.bairro.value
-      if(bairro==""){
-         alert("Por favor, informe seu bairro.")
-      }
-      var regex=/[0-9]/
-      if(regex.test(bairro)==true){
-         alert("Coloque somente letras ao informar o seu bairro")
-      }
+   function Vbairros(){
+      const Bairros = document.querySelectorAll("option")
+      if(Bairros[0].selected==true){
+         alert("Selecione um bairro, por favor!")
    }
+       
+   } 
    function radio(){
    var radios= document.getElementsByName("pagamento")
-   var formapagamento=""
-   
-   if(radios[0].checked){
-      formapagamento = 'Dinheiro'
-      return true
-
-      
-   } else if (radios[1].checked){
-      formapagamento = 'Cartão de Crédito'
-      return true
-
-
-   } else {
-      formapagamento =" Cartão de Débito"
-   } 
-   if(radios[0].checked== false && radios[1].checked==false&&radios[2].checked==false){
+    if(radios[0].checked== false && radios[1].checked==false&&radios[2].checked==false){
       alert("Escolha uma forma de pagamento.")
       radios.focus()
       return false
@@ -85,13 +67,13 @@
 }     
 
 function valida(){
-      nome()
-      endereco()
-      numero()  
-      bairro()
-      radio()
-   };
+   Vnome()
+   Vbairros()
+   Vendereco()
+   Vnumero()
+   radio()
 
+}
 
 
     

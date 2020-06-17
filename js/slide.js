@@ -1,3 +1,5 @@
+// Slide DE FOTOS NA HOMEPAGE
+
 $(document).ready(function(){
 $("#slide figure img:eq(0)").show().addClass('ativo')
 })  

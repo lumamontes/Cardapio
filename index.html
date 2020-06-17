@@ -598,27 +598,27 @@
                                 <div class="campo">
                                     <label for="nome">Nome:</label>
                                     <input type="text" name="nome" id="nome" width="10em" placeholder="Nome e Sobrenome"
-                                        onblur="return nome()">
+                                        onblur="return Vnome()">
                                 </div>
                             </fieldset>
                             <div class="campo">
                                 <label for="endereco">Endereço:</label>
                                 <input type="text" name="endereco"
                                     placeholder="Av.amoras da silva, entre groselha e gaucho" id="endereco" width="10em"
-                                    onblur="return endereco()">
+                                    onblur="return Vendereco()">
                             </div>
                             <fieldset class="grupo">
                                 <div class="campo">
                                     <label for="numero">Número:</label>
                                     <input type="text" name="numero" placeholder="Ex:2800" id="numero"
-                                        onblur="return numero()">
+                                        onblur="return Vnumero()">
                                 </div>
 
                                 <div class="campo">
                                     <label for="bairro">Bairro:</label>
                                     <div class="box">
 
-                                        <select name="bairro" required id="">
+                                        <select onblur="return Vbairros()" name="bairro" required id="">
                                             <option value="">Selecione o Bairro</option>
                                             <option value=3,00>Zerão</option>
                                             <option value=4,00>Santa Rita</option>
@@ -657,7 +657,7 @@
                                 <textarea rows="6" id="mensagem" name="mensagem" placeholder="observações"></textarea>
                             </div>
                             <div class="campo">
-                                <input id="enviar" type="button" value="Pedir no WhatsApp" class="botao"
+                                <input target id="enviar" type="button" value="Pedir no WhatsApp" class="botao"
                                     onclick='return valida()'>
                             </div>
                         </fieldset>
