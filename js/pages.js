@@ -1,5 +1,5 @@
 // Adicionar e remover classes HIDDEN, SELECTED e AlturaAuto
-
+// BARRA LATERAL FIXA -
 $(function(){
 
     $('#i-sobre').click(function(i){
@@ -77,6 +77,8 @@ $(function(){
  });
  }); 
  
+// BOTÃO + DE ADICIONAIS -
+
 
    $(".btnAdd1").click(function(i){
      $('#adicionais1').toggleClass('hidden')
