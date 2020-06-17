@@ -34,11 +34,19 @@
   height: 100px;
 }
 
+#bebidas .item-info {
+  height: 300px;
+
+  
+  
+}
 #bebidas .itens-container .item-info .item-txt {
   display: flex;
   flex-direction: column;
   padding: 7px;
   height: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .item-numeros-container{

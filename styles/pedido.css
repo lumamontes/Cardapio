@@ -1,4 +1,6 @@
 
+/* CSS DO FORMULÁRIO */
+
 .flex-container {
     display: flex;
   }
@@ -91,16 +93,22 @@
     /* ==== --- CSS de informação -- =====*/
     #info{
   background-color:#fff; 
-  width:18.75em;
+  width:20em;
   min-height:25em;
-  padding:2em;
+  padding:1em;
   float:left;
   }
   #info p{font-size:14px;
   font-family: 'Noto Sans JP', sans-serif; 
   }
 
-  /* SELECT */
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  /* CSS SELECT - BAIRROS */
  
   .box select {
     background-color: #ffffff;

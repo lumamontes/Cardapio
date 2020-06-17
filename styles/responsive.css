@@ -1,14 +1,13 @@
 @media (max-width: 1000px) {
     .sidenav {
      
-        width: 200px; /* Set the width of the sidebar */
+        width: 200px;
 
       }
 
     .main{
-        margin-left: 200px; /* Same as the width of the sidebar */
-      }
-
+        margin-left: 200px;
+    }
       .itens-container {
         grid-template-columns: 1fr 1fr;
       }
@@ -18,11 +17,11 @@
 @media (max-width: 900px) {
     .sidenav {
         visibility: hidden;
-        width: 0px; /* Set the width of the sidebar */
+        width: 0px; 
 
       }
       .main{
-        margin-left: 10px; /* Same as the width of the sidebar */
+        margin-left: 10px;
       }
 
       .itens-container {

@@ -40,6 +40,10 @@ a {
 input[type=checkbox] {
   width: 50px;
   height: 25px;
+  cursor: pointer;
+}
+.fas {
+  cursor: pointer;
 }
 .sobre-icone {
   color: var(--laranja);
