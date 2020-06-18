@@ -81,7 +81,11 @@ $(document).ready(function(){
         var cupom = $("#cupom").val()
            if( cupom == 'cupom10' ) {
            var desconto = 10
-        }    
+        }else{ 
+        if( cupom == '' ) {
+        var desconto = 0
+     }       
+    }
 
         var texto=`${nome};${endereco}; ${bairro}; ${numero}; ${observacao}; 
         // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, ${adicionalSelecionado},

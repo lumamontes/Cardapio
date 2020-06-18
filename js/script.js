@@ -71,8 +71,7 @@ function valida(){
    Vbairros()
    Vendereco()
    Vnumero()
-   radio()
-
+  radio()
 }
 
 

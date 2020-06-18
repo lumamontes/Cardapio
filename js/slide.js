@@ -7,14 +7,12 @@ $("#slide figure img:eq(0)").show().addClass('ativo')
 // função para passar as imagens
     function slide() {
         if ($(".ativo").next().length){
-            $(".ativo").fadeOut().removeClass('ativo').next().fadeIn().addClass("ativo")
+            $(".ativo").fadeOut().removeClass("ativo").next().fadeIn().addClass("ativo")
             
         
         }else{
             $(".ativo").fadeOut().removeClass("ativo")
-            $("#slide figure img:eq(0)").fadeIn().addClass('ativo')
-            
-            $("#slide p").fadeOut().remove()
+            $("#slide figure img:eq(0)").fadeIn().addClass('ativo')            
         }
     }
 // intervalo de tempo da função
