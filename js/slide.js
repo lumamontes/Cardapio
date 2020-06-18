@@ -31,5 +31,3 @@ $("#slide figure img:eq(0)").show().addClass('ativo')
             $("#slide figure img:eq(2)").fadeIn().addClass("ativo")
         }
     })
-
-   

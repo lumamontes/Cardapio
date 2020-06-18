@@ -1,7 +1,8 @@
 //BOtão de enviar as informações no WhatsApp
 
 $(document).ready(function(){
-      $("#enviar").click(function(){
+    
+    $("#enviar").click(function(){
        var nome=$("#nome").val()
        var endereco=$("#endereco").val()
        var numero=$("#numero").val()
@@ -87,15 +88,20 @@ $(document).ready(function(){
      }       
     }
 
-        var texto=`${nome};${endereco}; ${bairro}; ${numero}; ${observacao}; 
-        // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, ${adicionalSelecionado},
-         Valor do Pedido = ${soma},00 
-         ;Taxa de entrega = ${TaxaDeEntrega},00
-         ;Desconto = ${desconto},00 
-         ;Valor Total: ${(soma+TaxaDeEntrega) - desconto},00`
-        
-        var site="https://api.whatsapp.com/send?phone=5596991910012&text="+texto.replace(" ","%20","%0a")
+    
+    var texto=`${nome};${endereco}; ${bairro}; ${numero}; ${observacao}; 
+    // Forma de pagamento: ${formaSelecionada}, Pedido: ${pedidoSelecionado}, ${adicionalSelecionado},
+    Valor do Pedido = ${soma},00 
+    ;Taxa de entrega = ${TaxaDeEntrega},00
+    ;Desconto = ${desconto},00 
+    ;Valor Total: ${(soma+TaxaDeEntrega) - desconto},00`
+
+    var site="https://api.whatsapp.com/send?phone=5596991910012&text="+texto.replace(" ","%20","%0a")
+    
+    if(confirm("Deseja fazer seu pedido?")){
         window.location.href=site;
-        
-    })
+    } else {
+    }
 })
+})
+

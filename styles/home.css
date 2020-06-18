@@ -50,7 +50,8 @@ input[type=checkbox] {
   padding: 5px;
 }
 .txt-negrito {
-  color: var(--preto)
+  color: var(--preto);
+  font-weight: 900;
 }
 
 .txt-italico {
